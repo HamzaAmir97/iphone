@@ -1,30 +1,51 @@
-
 import {hightlightsSlides} from '../constants'
 import { useEffect, useState, useRef } from 'react';
+
+
+
+
 const VideoCarousel = () => {
 
-   const vedioRef = useRef([null]);
-   const vediospanRef = useRef([null]);
-   const vediodivRef = useRef([null]);
+   const videoRef = useRef([]);
+   const videoSpanRef = useRef([]);
+   const videoDivRef = useRef([]);
 
    const [vedioIndex, setVedio] = useState({
  isEnd: false,
  startPlay: false,
- veddioId: 0,
+ videoId: 0,
  isLastVedio: false,
  isPlaying: false,
  
 
 
    });
-const [isEnd, startPlay, veddioId, isLastVedio, isPlaying] = video;
+
+
+const [isEnd, startPlay, videoId, isLastVedio, isPlaying] = vedioIndex;
    
 useEffect(() => {
 
  const currentProgress = 0;
- let span = videoSpanRef.current;
+ let span =videoSpanRef.current;
 
-}, [videoIdstartPlay])
+
+ if(span[videoId]){
+    let anim= gsap.to(span[videoId], {
+
+    onUpdate: () => {
+
+    }
+
+   
+
+    })
+
+
+ }
+}, [videoId,startPlay])
+
+
 
   return (
     <div className="flex items-center">
