@@ -1,7 +1,50 @@
-import React from 'react'
+
+import { useGsap } from 'gsap'
 
 export const Model = () => {
+useGsap(() => {
+ gsap.to('#heading', {
+         opacity: 0, y: 0,
+ })
+
+
+
+}, [])
+
+
   return (
-    <div>Model</div>
+
+
+    <section className='common-padding'>
+    <div className='screen-max-width'>
+    
+        <h1 id='heading' className='section-heading'>
+        Take colser look.
+        </h1>
+        <div className='flex flex-col  items-center mt-5'>
+        <div className='relative w-full h-[75vh] md:h-[90vh] overflow-hidden relative'>
+
+
+
+
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+
+
+
+    </section>
   )
 }
+
+export default Model;
