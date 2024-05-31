@@ -1,6 +1,6 @@
 
 import { useGsap } from 'gsap'
-
+import gsap from 'gsap'
 export const Model = () => {
 useGsap(() => {
  gsap.to('#heading', {
@@ -8,13 +8,11 @@ useGsap(() => {
  })
 
 
-
+  
 }, [])
 
 
   return (
-
-
     <section className='common-padding'>
     <div className='screen-max-width'>
     
