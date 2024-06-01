@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 import { ModelView } from "./ModelView";
 import {yellowImg} from "../utils";
 import { useState, useRef } from "react";
-
+import * as THREE from "three";
 export const Model = () => {
 
 const [size, setSize] = useState("small");
