@@ -20,7 +20,16 @@ const [Model, setModel] = useState({
   
 const cameraControlSmall = useRef();
 const cameraControlLarge = useRef();
-const small = useref(newTHREE.Grouo());
+
+
+//model v
+const small = useRef(new THREE.Group());
+const large = useRef(new THREE.Group());
+
+
+
+
+
 
 
   useGSAP(() => {
