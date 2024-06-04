@@ -60,8 +60,24 @@ const [largeRotation, setLargeRotation] = useState(0);
         <div className='flex flex-col  items-center mt-5'>
         <div className=' w-full h-[75vh] md:h-[90vh] overflow-hidden relative'>
 
-               <ModelView/>
-
+               <ModelView 
+               index={1}
+                gruopRef={small}
+                gropuType="view1"
+                controlRef={cameraControlSmall}
+                setRotationState={setSmallRotation}
+                item={Model}
+                size={size}
+               />
+              <ModelView 
+               index={2}
+                gruopRef={large}
+                gropuType="view2"
+                controlRef={cameraControlLarge}
+                setRotationState={setLargeRotation}
+                item={Model}
+                size={size}
+               />
 
         </div>
         </div>
