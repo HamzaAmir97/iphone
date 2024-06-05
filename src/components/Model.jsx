@@ -6,10 +6,18 @@ import { ModelView } from "./ModelView";
 import {yellowImg} from "../utils";
 import { useState, useRef } from "react";
 import * as THREE from "three";
-export const Model = () => {
+import { Canvas } from "@react-three/fiber";
+import { View } from "@react-three/drei";
+
+
+
+
+
+const Model = () => {
+
 
 const [size, setSize] = useState("small");
-const [Model, setModel] = useState({
+const [model, setModel] = useState({
     title: "iphone 15 pro in Natural Titanum",
     color: ["#8F8A81", "#FFE7B9", "#6F6C64"],
     image: yellowImg,
@@ -79,6 +87,39 @@ const [largeRotation, setLargeRotation] = useState(0);
                 size={size}
                />
 
+              
+            <Canvas
+              className="w-full h-full"
+              style={{
+                position: 'fixed',
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
+                overflow: 'hidden'
+              }}
+              eventSource={document.getElementById('root')}
+            >
+              <View.Port />
+            </Canvas>
+
+        <div className="mx-auto w-ful">
+
+         <p className="text-sm font-light
+         text-center mb-5">{model.title}</p>
+        <div className="flex-center">
+
+        <ul className="color-container">
+                {models.map((item, i) => (
+                  <li key={i} className="w-6 h-6 rounded-full mx-2 cursor-pointer" style={{ backgroundColor: item.color[0] }} onClick={() => setModel(item)} />
+                ))}
+              </ul>
+
+        </div>
+
+
+
+
         </div>
         </div>
         
@@ -89,7 +130,7 @@ const [largeRotation, setLargeRotation] = useState(0);
         
         
         
-        
+        </div>
         
         </div>
 
