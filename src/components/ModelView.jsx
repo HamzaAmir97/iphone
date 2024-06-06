@@ -10,11 +10,10 @@ export const ModelView = ({index,groupRef,groupType,gsapRef,
     id={gsapType}
     ref={groupRef}
     className="border-2 border-red-500"
-    >ModelView
-        <mesh>
-            <boxGeometry/>
-            <meshStandardMaterial/>
-        </mesh>
+    >
+     
+
+     
     </View>
   )
 }
