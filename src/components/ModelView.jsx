@@ -9,9 +9,9 @@ export const ModelView = ({index,groupRef,groupType,gsapRef,
     index={index}
     id={gsapType}
     ref={groupRef}
-    className="border-2 border-red-500"
+    className="border-2 border-red-500 w-full h-full"
     >
-     
+        
 
      
     </View>

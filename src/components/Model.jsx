@@ -1,12 +1,12 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap";
-// import ModelView from "./ModelView";
+import ModelView from "./ModelView";
 import { useEffect, useRef, useState } from "react";
 import { yellowImg } from "../utils";
 
 import * as THREE from 'three';
-// import { Canvas } from "@react-three/fiber";
-// import { View } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { View } from "@react-three/drei";
 import { models, sizes } from "../constants";
 import { animateWithGsapTimeline } from "../utils/animations";
 
@@ -61,7 +61,7 @@ const Model = () => {
 
         <div className="flex flex-col items-center mt-5">
           <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
-            {/* <ModelView 
+            <ModelView 
               index={1}
               groupRef={small}
               gsapType="view1"
@@ -79,8 +79,8 @@ const Model = () => {
               setRotationState={setLargeRotation}
               item={model}
               size={size}
-            /> */}
-{/* 
+            />
+
             <Canvas
               className="w-full h-full"
               style={{
@@ -94,7 +94,9 @@ const Model = () => {
               eventSource={document.getElementById('root')}
             >
               <View.Port />
-            </Canvas> */}
+            </Canvas>
+
+            
           </div>
 
           <div className="mx-auto w-full">
