@@ -1,8 +1,7 @@
 import { View } from "@react-three/drei";
 
 
-export const ModelView = ({index,groupRef,groupType,gsapRef,
-    controlRef, setRotationSize, size,item}
+export const ModelView = ({index, groupRef, gsapType, controlRef, setRotationState, size, item}
 ) => {
   return (
     <View
