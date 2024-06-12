@@ -8,7 +8,7 @@ export const ModelView = ({index, groupRef, gsapType, controlRef, setRotationSta
     index={index}
     id={gsapType}
     ref={groupRef}
-    className="border-2 border-red-500 w-full h-full"
+     className={`border-2 border-red-500 w-full h-full absolute ${index === 2 ? 'right-[-100%]' : ''}`}
     >
         
 
