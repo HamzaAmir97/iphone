@@ -20,11 +20,11 @@ export const ModelView = ({index, groupRef, gsapType, controlRef, setRotationSta
 
 <PerspectiveCamera makeDefault position={[0, 0, 4]} />
 <Lights />
-<Suspense fallback={<div>Loading...</div>}>
+{/* <Suspense fallback={<div>Loading...</div>}>
 
 
 </Suspense>
-     
+      */}
     </View>
   )
 }
