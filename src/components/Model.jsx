@@ -95,8 +95,6 @@ const Model = () => {
             >
               <View.Port />
             </Canvas>
-
-            
           </div>
 
           <div className="mx-auto w-full">
