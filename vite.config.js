@@ -13,6 +13,12 @@ export default defineConfig({
   }), sentryVitePlugin({
     org: "jsm-0i0",
     project: "javascript-react"
+  }), sentryVitePlugin({
+    org: "jsm-0i0",
+    project: "javascript-react"
+  }), sentryVitePlugin({
+    org: "jsm-0i0",
+    project: "iphone16clone"
   })],
 
   build: {
